@@ -7,54 +7,115 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | News homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
+  <main class="contenedor">
+    <header class="header">
+      <div class="barra">
+        
+        <img src="./assets/images/logo.svg" alt="logo-W">
+        
+        <nav class="barra-links">
+          
+          <input type="checkbox" id="alternar-menu">
+          
+          <label for="alternar-menu" class="drawner-mostrar">
+            <img class="icon-menu" src="./assets/images/icon-menu.svg" alt="icon-menu">
+          </label>
+          
+          <label for="alternar-menu" class="drawner-ocultar">
+            <img class="icon-close" src="./assets/images/icon-menu-close.svg" alt="icon-menu">
+          </label>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+          <div class="sombra"></div>
+          
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">categories</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+      
+    <div class="contenido">
+      <div class="img-mobile"><img src="./assets/images/image-web-3-mobile.jpg" alt="img-mobile"></div>
+      <div class="img-desktop"><img src="./assets/images/image-web-3-desktop.jpg" alt="img-desktop"></div>
+      
+      <h1 class="titulo">The Bright Future of Web 3.0?</h1>
+      
+      <div class="info">
+        <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+        <button type="button">Read more</button>
+      </div>
+      
+      <aside class="aside-news">
+        <h2>New</h2>
+        <article>
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </article>
 
-  The Bright Future of Web 3.0?
+        <article>
+          <h3>The Downsides of AI Artistry</h3>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        </article>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
+        <article>
+          <h3>Is VC Funding Drying Up?</h3>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </article>
+      </aside>
 
-  Read more
 
-  New 
+      <div class="container-article">
+        <div class="content-01">
 
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
+          <img src="./assets/images/image-retro-pcs.jpg" alt="">
 
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
+          <div class="info-article">
+            <span>01</span>
+            <h3>Reviving Retro PCs</h3>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
 
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+        </div>
+        
+      </div>
 
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
+      <div class="container-article">
+        <div class="content-02">
 
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
+          <img src="./assets/images/image-top-laptops.jpg" alt="">
+          
+          <div class="info-article">
+            <span>02</span>
+            <h3>Top 10 Laptops of 2022</h3>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
 
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
+        </div>
+      </div>
+
+      <div class="container-article">
+
+        <div class="content-03">
+          <img src="./assets/images/image-gaming-growth.jpg" alt="">
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+          <div class="info-article">
+            <span>03</span>
+            <h3>The Growth of Gaming</h3>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </main>
 </body>
 </html>
