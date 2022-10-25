@@ -160,13 +160,8 @@ dist
 
 # End of https://www.toptal.com/developers/gitignore/api/node
 
-*.json
-/scss
-
 # ### Sass ###
 .sass-cache/
 *.css.map
 *.sass.map
 *.scss.map
-
-gulpfile.js
